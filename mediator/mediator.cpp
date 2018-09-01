@@ -15,6 +15,10 @@ Mediator::Mediator(){}
 
 Mediator::~Mediator(){}
 
+ConcreteMediator::ConcreteMediator(){}
+
+ConcreteMediator::~ConcreteMediator(){}
+		
 ConcreteMediator::ConcreteMediator(Colleage* clgA, 
 								   Colleage* clgB)
 {
@@ -37,12 +41,12 @@ void ConcreteMediator::SetConcreteColleageB(Colleage* clgB)
 	this->_clgB= clgB;
 }
 
-Colleage* Colleage::GetConcreteColleageA()
+Colleage* ConcreteMediator::GetConcreteColleageA()
 {
 	return _clgA;
 }
 
-Colleage* Colleage::GetConcreteColleageB()
+Colleage* ConcreteMediator::GetConcreteColleageB()
 {
 	return _clgB;
 }
@@ -54,7 +58,7 @@ void ConcreteMediator::IntroColleage(Colleage* clgA,
 	this->_clgB = clgB;
 }
 
-void ConcreteMediator::DoActionFromBtoA():
+void ConcreteMediator::DoActionFromBtoA()
 {
 	_clgA->SetState(_clgB->GetState());
 }

@@ -7,7 +7,7 @@
 
 #include<iostream>
 #include"mediator.hpp"
-#include"colleate.hpp"
+#include"colleage.hpp"
 
 using namespace std;
 
@@ -18,39 +18,39 @@ Colleage::Colleage(Mediator* mdt)
 	this->_mdt = mdt;
 }
 
-Colleage::~Colleage(){};
+Colleage::~Colleage(){}
 
 ConcreteColleageA::ConcreteColleageA(){}
 
-ConcreteColleageA::ConcreteColleageA(Mediator* mdt): Colleage{mdt}
+ConcreteColleageA::ConcreteColleageA(Mediator* mdt): Colleage(mdt){}
 
 ConcreteColleageA::~ConcreteColleageA(){}
 
 std::string ConcreteColleageA::GetState()
 {
-	return _sdt;
+	return _st;
 }
 
 void ConcreteColleageA::Action()
 {
 	_mdt->DoActionFromAtoB();
-	std::cout << "state of ConcreteColleageB: " << this->GetState() << std::endl;
+	std::cout << "state of ConcreteColleageA: " << this->GetState() << std::endl;
 }
 
-void ConcreteColleageA::SetState(const std::string& sdt)
+void ConcreteColleageA::SetState(const std::string& st)
 {
-	_sdt = sdt;
+	_st = st;
 }
 
 ConcreteColleageB::ConcreteColleageB(){}
 
-ConcreteColleageB::ConcreteColleageB(Mediator* mdt): Colleage{mdt}
+ConcreteColleageB::ConcreteColleageB(Mediator* mdt): Colleage(mdt){}
 
 ConcreteColleageB::~ConcreteColleageB(){}
 
 std::string ConcreteColleageB::GetState()
 {
-	return _sdt;
+	return _st;
 }
 
 void ConcreteColleageB::Action()
@@ -59,7 +59,7 @@ void ConcreteColleageB::Action()
 	std::cout << "state of ConcreteColleageB: " << this->GetState() << std::endl;
 }
 
-void ConcreteColleageB::SetState(const std::string& sdt)
+void ConcreteColleageB::SetState(const std::string& st)
 {
-	_sdt = sdt;
+	_st = st;
 }

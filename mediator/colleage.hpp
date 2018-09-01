@@ -33,7 +33,7 @@ public:
 	ConcreteColleageA(Mediator* mdt);
 	~ConcreteColleageA();
 	void Action() override;
-	void SetState() override;
+	void SetState(const std::string& st) override;
 	std::string GetState(); 
 protected:
 	std::string _st;
@@ -46,7 +46,7 @@ public:
 	ConcreteColleageB(Mediator* mdt);
 	~ConcreteColleageB();
 	void Action() override;
-	void SetState() override;
+	void SetState(const std::string& st) override;
 	std::string GetState(); 
 protected:
 	std::string _st;
