@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+_CLIENT_LOGIN_H	client_login.h	9;"	d
+_LOGIN_MODEL_H	login_model.h	9;"	d
+_LOGIN_TEMPLATE_H	login_template.h	9;"	d
+_MASTER_LOGIN_H	master_login.h	9;"	d
+client_login	client_login.h	/^struct client_login {$/;"	s
+client_login_init	client_login.c	/^static void client_login_init(struct client_login* pthis) $/;"	f	file:
+construct_client_login	client_login.c	/^struct client_login* construct_client_login(void)$/;"	f
+construct_login_model	login_model.c	/^struct login_model* construct_login_model(void)$/;"	f
+construct_login_template	login_template.c	/^struct login_template* construct_login_template(void)$/;"	f
+construct_master_login	master_login.c	/^struct master_login* construct_master_login(void)$/;"	f
+destruct_client_login	client_login.c	/^void destruct_client_login(struct client_login* pthis)$/;"	f
+destruct_login_model	login_model.c	/^void destruct_login_model(struct login_model* pthis)$/;"	f
+destruct_master_login	master_login.c	/^void destruct_master_login(struct master_login* pthis)$/;"	f
+desturct_login_template	login_template.c	/^void desturct_login_template(struct login_template* pthis)$/;"	f
+encrypt_pwd	client_login.h	/^	char* (*encrypt_pwd)(struct login_template* pthis, char* pwd);$/;"	m	struct:client_login
+encrypt_pwd	login_template.c	/^static char* encrypt_pwd(struct login_template* pthis, char* pwd)$/;"	f	file:
+encrypt_pwd	login_template.h	/^	char* (*encrypt_pwd)(struct login_template* pthis, char* pwd);$/;"	m	struct:login_template
+encrypt_pwd	master_login.h	/^	char* (*encrypt_pwd)(struct login_template* pthis, char* pwd);$/;"	m	struct:master_login
+encrypt_pwd_ov	master_login.c	/^static char* encrypt_pwd_ov(struct login_template* pthis, char* pwd)$/;"	f	file:
+encrypt_pwd_vm	login_template.h	/^	char* (*encrypt_pwd_vm)(struct login_template* pthis, char* pwd);$/;"	m	struct:login_template_vmt
+find_login_user	client_login.h	/^	struct login_model* (*find_login_user)(struct login_template* pthis, int id);$/;"	m	struct:client_login	typeref:struct:client_login::find_login_user
+find_login_user	login_template.c	/^static struct login_model* find_login_user(struct login_template* pthis, int id)$/;"	f	file:
+find_login_user	login_template.h	/^	struct login_model* (*find_login_user)(struct login_template* pthis, int id);$/;"	m	struct:login_template	typeref:struct:login_template::find_login_user
+find_login_user	master_login.h	/^	struct login_model* (*find_login_user)(struct login_template* pthis, int id);$/;"	m	struct:master_login	typeref:struct:master_login::find_login_user
+find_login_user_ov	client_login.c	/^static struct login_model* find_login_user_ov(struct login_template* pthis, int id)$/;"	f	file:
+find_login_user_ov	master_login.c	/^static struct login_model* find_login_user_ov(struct login_template* pthis, int id)$/;"	f	file:
+find_login_user_vm	login_template.h	/^	struct login_model* (*find_login_user_vm)(struct login_template* pthis, int id);$/;"	m	struct:login_template_vmt	typeref:struct:login_template_vmt::find_login_user_vm
+get_id	login_model.c	/^static int get_id(struct login_model* pthis)$/;"	f	file:
+get_id	login_model.h	/^	int (*get_id)(struct login_model* pthis);$/;"	m	struct:login_model
+get_pwd	login_model.c	/^static char* get_pwd(struct login_model* pthis)$/;"	f	file:
+get_pwd	login_model.h	/^	char* (*get_pwd)(struct login_model* pthis);$/;"	m	struct:login_model
+id	login_model.h	/^	int id;$/;"	m	struct:login_model
+login	client_login.h	/^	bool (*login)(struct login_template* pthis, struct login_model* plm);$/;"	m	struct:client_login
+login	login_template.c	/^static bool login(struct login_template* pthis, struct login_model* plm)$/;"	f	file:
+login	login_template.h	/^	bool (*login)(struct login_template* pthis, struct login_model* plm);$/;"	m	struct:login_template
+login	master_login.h	/^	bool (*login)(struct login_template* pthis, struct login_model* plm);$/;"	m	struct:master_login
+login_model	login_model.h	/^struct login_model {$/;"	s
+login_model_init	login_model.c	/^static void login_model_init(struct login_model* pthis)$/;"	f	file:
+login_template	login_template.h	/^struct login_template {$/;"	s
+login_template_init	login_template.c	/^void login_template_init(struct login_template* pthis)$/;"	f
+login_template_vmt	login_template.h	/^struct login_template_vmt {$/;"	s
+main	test.c	/^int main()$/;"	f
+master_login	master_login.h	/^struct master_login {$/;"	s
+master_login_init	master_login.c	/^static void master_login_init(struct master_login* pthis) $/;"	f	file:
+match	client_login.h	/^	bool (*match)(struct login_template* pthis, struct login_model* plm, struct login_model* pdb);$/;"	m	struct:client_login
+match	login_template.c	/^static bool match(struct login_template* pthis, struct login_model* plm, struct login_model* pdb)$/;"	f	file:
+match	login_template.h	/^	bool (*match)(struct login_template* pthis, struct login_model* plm, struct login_model* pdb);$/;"	m	struct:login_template
+match	master_login.h	/^	bool (*match)(struct login_template* pthis, struct login_model* plm, struct login_model* pdb);$/;"	m	struct:master_login
+pwd	login_model.h	/^	char pwd[16];$/;"	m	struct:login_model
+set_id	login_model.c	/^static void set_id(struct login_model* pthis, int id)$/;"	f	file:
+set_id	login_model.h	/^	void (*set_id)(struct login_model* pthis, int id);$/;"	m	struct:login_model
+set_pwd	login_model.c	/^static void set_pwd(struct login_model* pthis, char* pwd)$/;"	f	file:
+set_pwd	login_model.h	/^	void (*set_pwd)(struct login_model* pthis, char* pwd);$/;"	m	struct:login_model
+super	client_login.h	/^	struct login_template super;	$/;"	m	struct:client_login	typeref:struct:client_login::login_template
+super	master_login.h	/^	struct login_template super;	$/;"	m	struct:master_login	typeref:struct:master_login::login_template
+vptr	login_template.h	/^	const struct login_template_vmt* vptr;			$/;"	m	struct:login_template	typeref:struct:login_template::login_template_vmt

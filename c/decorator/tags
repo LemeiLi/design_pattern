@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Component	component.h	/^typedef struct component Component;$/;"	t	typeref:struct:component
+Component	component.h	/^}Component;$/;"	t	typeref:struct:component
+ComponentInit	component.c	/^void ComponentInit(Component* pthis)$/;"	f
+ComponentVMT	component.h	/^}ComponentVMT;$/;"	t	typeref:struct:component_vmt
+ConcreteComponent	concrete_component.h	/^typedef struct concrete_component ConcreteComponent;$/;"	t	typeref:struct:concrete_component
+ConcreteComponent	concrete_component.h	/^}ConcreteComponent;$/;"	t	typeref:struct:concrete_component
+ConcreteComponentInit	concrete_component.c	/^void ConcreteComponentInit(ConcreteComponent* pthis)$/;"	f
+ConcreteComponentVMT	concrete_component.h	/^}ConcreteComponentVMT;$/;"	t	typeref:struct:concrete_component_vmt
+ConcreteDecoratorA	concrete_decoratorA.h	/^typedef struct concrete_decoratorA ConcreteDecoratorA;$/;"	t	typeref:struct:concrete_decoratorA
+ConcreteDecoratorA	concrete_decoratorA.h	/^}ConcreteDecoratorA;$/;"	t	typeref:struct:concrete_decoratorA
+ConcreteDecoratorAInit	concrete_decoratorA.c	/^void ConcreteDecoratorAInit(ConcreteDecoratorA* pthis)$/;"	f
+ConstructConcreteComponent	concrete_component.c	/^ConcreteComponent* ConstructConcreteComponent(void)$/;"	f
+ConstructConcreteDecoratorA	concrete_decoratorA.c	/^ConcreteDecoratorA* ConstructConcreteDecoratorA(void)$/;"	f
+Decorator	decorator.h	/^typedef struct decorator Decorator;$/;"	t	typeref:struct:decorator
+Decorator	decorator.h	/^}Decorator;$/;"	t	typeref:struct:decorator
+DecoratorInit	decorator.c	/^void DecoratorInit(Decorator* pthis)$/;"	f
+DecoratorVMT	decorator.h	/^}DecoratorVMT;$/;"	t	typeref:struct:decorator_vmt
+DestructConcreteComponent	concrete_component.c	/^void DestructConcreteComponent(ConcreteComponent** ppthis)$/;"	f
+DestructConcreteDecorator	concrete_decoratorA.c	/^void DestructConcreteDecorator(ConcreteDecoratorA** ppthis)$/;"	f
+_COMPONENT_H	component.h	9;"	d
+_CONCRETE_COMPONENT_H	concrete_component.h	9;"	d
+_CONCRETE_DECORATORA_H	concrete_decoratorA.h	9;"	d
+_DECORATOR_H	decorator.h	9;"	d
+component	component.h	/^typedef struct component {$/;"	s
+component_attribute	component.h	13;"	d
+component_operation	component.h	15;"	d
+component_vmt	component.h	/^typedef struct component_vmt {$/;"	s
+concrete_component	concrete_component.h	/^typedef struct concrete_component {$/;"	s
+concrete_component_attribute	concrete_component.h	19;"	d
+concrete_component_attribute_alone	concrete_component.h	15;"	d
+concrete_component_operation	concrete_component.h	23;"	d
+concrete_component_operation_alone	concrete_component.h	17;"	d
+concrete_component_vmt	concrete_component.h	/^typedef struct concrete_component_vmt {$/;"	s
+concrete_decoratorA	concrete_decoratorA.h	/^typedef struct concrete_decoratorA {$/;"	s
+concrete_decoratorA_attribute	concrete_decoratorA.h	21;"	d
+concrete_decoratorA_attribute_alone	concrete_decoratorA.h	16;"	d
+concrete_decoratorA_operation	concrete_decoratorA.h	25;"	d
+concrete_decoratorA_operation_alone	concrete_decoratorA.h	19;"	d
+decorator	decorator.h	/^typedef struct decorator {$/;"	s
+decorator_attribute	decorator.h	20;"	d
+decorator_attribute_alone	decorator.h	15;"	d
+decorator_operation	decorator.h	24;"	d
+decorator_operation_alone	decorator.h	18;"	d
+decorator_vmt	decorator.h	/^typedef struct decorator_vmt {$/;"	s
+main	test.c	/^int main()$/;"	f
+operation	component.c	/^static void operation(Component* pthis)$/;"	f	file:
+operation	concrete_component.c	/^static void operation(Component* pthis)$/;"	f	file:
+operation	concrete_decoratorA.c	/^static void operation(Component* pthis)$/;"	f	file:
+operation	decorator.c	/^static void operation(Component* pthis)$/;"	f	file:
+super	concrete_component.h	/^	Component super;$/;"	m	struct:concrete_component
+super	concrete_decoratorA.h	/^	Decorator super;$/;"	m	struct:concrete_decoratorA
+super	decorator.h	/^	Component super;$/;"	m	struct:decorator
+vmt	component.c	/^static ComponentVMT vmt = {$/;"	v	file:
+vmt	concrete_component.c	/^static ConcreteComponentVMT vmt = {$/;"	v	file:
+vmt	decorator.c	/^static DecoratorVMT vmt = {$/;"	v	file:
+vptr	component.h	/^	ComponentVMT* vptr;		$/;"	m	struct:component
+vptr	concrete_component.h	/^	ConcreteComponentVMT *vptr;$/;"	m	struct:concrete_component
+vptr	decorator.h	/^	DecoratorVMT *vptr;$/;"	m	struct:decorator

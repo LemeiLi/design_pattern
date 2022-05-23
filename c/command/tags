@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+_ADD_COMMAND_H	add_command.h	9;"	d
+_ALGO_OPERATION_H	algo_operation.h	9;"	d
+_CALCULATOR_H	calculator.h	9;"	d
+_COMMAND_H	command.h	9;"	d
+_OPERATION_H	operation.h	9;"	d
+_SUB_COMMAND_H	sub_command.h	9;"	d
+add_cmd	calculator.h	/^	struct command* add_cmd;$/;"	m	struct:calculator	typeref:struct:calculator::command
+add_command	add_command.h	/^struct add_command {$/;"	s
+add_command_init	add_command.c	/^static void add_command_init(struct add_command* pthis, struct operation* ops, int ope_num)$/;"	f	file:
+add_ops	algo_operation.h	/^	void (*add_ops)(struct operation* pthis, int num);$/;"	m	struct:algo_operation
+add_ops	operation.c	/^static void add_ops(struct operation* pthis, int num)$/;"	f	file:
+add_ops	operation.h	/^	void (*add_ops)(struct operation* pthis, int num);$/;"	m	struct:operation
+add_ops_ov	algo_operation.c	/^static void add_ops_ov(struct operation* pthis, int num)$/;"	f	file:
+add_ops_vm	operation.h	/^	void (*add_ops_vm)(struct operation* pthis, int num);$/;"	m	struct:operation_vmt
+add_pressed	calculator.c	/^static void add_pressed(struct calculator* pthis)$/;"	f	file:
+add_pressed	calculator.h	/^	void (*add_pressed)(struct calculator* pthis);$/;"	m	struct:calculator
+algo_operation	algo_operation.h	/^struct algo_operation {$/;"	s
+algo_operation_init	algo_operation.c	/^void algo_operation_init(struct algo_operation* pthis)$/;"	f
+calculator	calculator.h	/^struct calculator {$/;"	s
+calculator_init	calculator.c	/^static void calculator_init(struct calculator* pthis)$/;"	f	file:
+command	command.h	/^struct command {$/;"	s
+command_init	command.c	/^void command_init(struct command* pthis)$/;"	f
+command_vmt	command.h	/^struct command_vmt {$/;"	s
+construct_add_commmad	add_command.c	/^struct add_command* construct_add_commmad(struct operation* ops, int ope_num)$/;"	f
+construct_algo_operation	algo_operation.c	/^struct algo_operation* construct_algo_operation(void)$/;"	f
+construct_calculator	calculator.c	/^struct calculator* construct_calculator(void)$/;"	f
+construct_sub_commmad	sub_command.c	/^struct sub_command* construct_sub_commmad(struct operation* ops, int ope_num)$/;"	f
+destruct_add_command	add_command.c	/^void destruct_add_command(struct add_command* pthis)$/;"	f
+destruct_calculator	calculator.c	/^void destruct_calculator(struct calculator* pthis)$/;"	f
+destruct_sub_command	sub_command.c	/^void destruct_sub_command(struct sub_command* pthis)$/;"	f
+exectue	add_command.h	/^	void (*exectue)(struct command* pthis);$/;"	m	struct:add_command
+exectue	command.c	/^static void exectue(struct command* pthis)$/;"	f	file:
+exectue	command.h	/^	void (*exectue)(struct command* pthis);$/;"	m	struct:command
+exectue	sub_command.h	/^	void (*exectue)(struct command* pthis);$/;"	m	struct:sub_command
+exectue_ov	add_command.c	/^static void exectue_ov(struct command* pthis)$/;"	f	file:
+exectue_ov	sub_command.c	/^static void exectue_ov(struct command* pthis)$/;"	f	file:
+exectue_vm	command.h	/^	void (*exectue_vm)(struct command* pthis);$/;"	m	struct:command_vmt
+get_result	algo_operation.h	/^	int (*get_result)(struct operation* pthis);$/;"	m	struct:algo_operation
+get_result	operation.c	/^static int get_result(struct operation* pthis)$/;"	f	file:
+get_result	operation.h	/^	int (*get_result)(struct operation* pthis);$/;"	m	struct:operation
+get_result_ov	algo_operation.c	/^static int get_result_ov(struct operation* pthis)$/;"	f	file:
+get_result_vm	operation.h	/^	int (*get_result_vm)(struct operation* pthis);$/;"	m	struct:operation_vmt
+main	test.c	/^int main()$/;"	f
+ope_num	add_command.h	/^	int ope_num;$/;"	m	struct:add_command
+ope_num	sub_command.h	/^	int ope_num;$/;"	m	struct:sub_command
+operation	add_command.h	/^	struct operation* operation;$/;"	m	struct:add_command	typeref:struct:add_command::operation
+operation	operation.h	/^struct operation {$/;"	s
+operation	sub_command.h	/^	struct operation* operation;$/;"	m	struct:sub_command	typeref:struct:sub_command::operation
+operation_init	operation.c	/^void operation_init(struct operation* pthis)$/;"	f
+operation_vmt	operation.h	/^struct operation_vmt {$/;"	s
+result	algo_operation.h	/^	int result;$/;"	m	struct:algo_operation
+set_add_cmd	calculator.c	/^static void set_add_cmd(struct calculator* pthis, struct command* cmd)$/;"	f	file:
+set_add_cmd	calculator.h	/^	void (*set_add_cmd)(struct calculator* pthis, struct command* cmd);$/;"	m	struct:calculator
+set_result	algo_operation.h	/^	void (*set_result)(struct operation* pthis, int result);$/;"	m	struct:algo_operation
+set_result	operation.c	/^static void set_result(struct operation* pthis, int result)$/;"	f	file:
+set_result	operation.h	/^	void (*set_result)(struct operation* pthis, int result);$/;"	m	struct:operation
+set_result_ov	algo_operation.c	/^static void set_result_ov(struct operation* pthis, int result)$/;"	f	file:
+set_result_vm	operation.h	/^	void (*set_result_vm)(struct operation* pthis, int result);$/;"	m	struct:operation_vmt
+set_sub_cmd	calculator.c	/^static void set_sub_cmd(struct calculator* pthis, struct command* cmd)$/;"	f	file:
+set_sub_cmd	calculator.h	/^	void (*set_sub_cmd)(struct calculator* pthis, struct command* cmd);$/;"	m	struct:calculator
+sub_cmd	calculator.h	/^	struct command* sub_cmd;$/;"	m	struct:calculator	typeref:struct:calculator::command
+sub_command	sub_command.h	/^struct sub_command {$/;"	s
+sub_command_init	sub_command.c	/^static void sub_command_init(struct sub_command* pthis, struct operation* ops, int ope_num)$/;"	f	file:
+sub_ops	algo_operation.h	/^	void (*sub_ops)(struct operation* pthis, int num);$/;"	m	struct:algo_operation
+sub_ops	operation.c	/^static void sub_ops(struct operation* pthis, int num)$/;"	f	file:
+sub_ops	operation.h	/^	void (*sub_ops)(struct operation* pthis, int num);$/;"	m	struct:operation
+sub_ops_ov	algo_operation.c	/^static void sub_ops_ov(struct operation* pthis, int num)$/;"	f	file:
+sub_ops_vm	operation.h	/^	void (*sub_ops_vm)(struct operation* pthis, int num);$/;"	m	struct:operation_vmt
+sub_pressed	calculator.c	/^static void sub_pressed(struct calculator* pthis)$/;"	f	file:
+sub_pressed	calculator.h	/^	void (*sub_pressed)(struct calculator* pthis);$/;"	m	struct:calculator
+super	add_command.h	/^	struct command super;	$/;"	m	struct:add_command	typeref:struct:add_command::command
+super	algo_operation.h	/^	struct operation super;$/;"	m	struct:algo_operation	typeref:struct:algo_operation::operation
+super	sub_command.h	/^	struct command super;	$/;"	m	struct:sub_command	typeref:struct:sub_command::command
+undo	add_command.h	/^	void (*undo)(struct command* pthis);$/;"	m	struct:add_command
+undo	command.c	/^static void undo(struct command* pthis)$/;"	f	file:
+undo	command.h	/^	void (*undo)(struct command* pthis);$/;"	m	struct:command
+undo	sub_command.h	/^	void (*undo)(struct command* pthis);$/;"	m	struct:sub_command
+undo_ov	add_command.c	/^static void undo_ov(struct command* pthis)$/;"	f	file:
+undo_ov	sub_command.c	/^static void undo_ov(struct command* pthis)$/;"	f	file:
+undo_vm	command.h	/^	void (*undo_vm)(struct command* pthis);$/;"	m	struct:command_vmt
+vptr	command.h	/^	const struct command_vmt *vptr;$/;"	m	struct:command	typeref:struct:command::command_vmt
+vptr	operation.h	/^	const struct operation_vmt* vptr;$/;"	m	struct:operation	typeref:struct:operation::operation_vmt

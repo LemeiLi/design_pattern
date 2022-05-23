@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INIT_LIST_HEAD	ulist.h	23;"	d
+LIST_HEAD	ulist.h	20;"	d
+LIST_HEAD_INIT	ulist.h	18;"	d
+_MEDIA_H	media.h	9;"	d
+_OBSERVER_H	observer.h	9;"	d
+_READER_H	reader.h	9;"	d
+_SUBJECT_H	subject.h	9;"	d
+__ULIST_H__	ulist.h	2;"	d
+__list_add	ulist.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_del	ulist.h	/^static inline void __list_del(struct list_head *prev, struct list_head *next)$/;"	f
+__list_splice	ulist.h	/^static inline void __list_splice(struct list_head *list,$/;"	f
+attach_observer	subject.h	/^	void (*attach_observer)(struct subject* pthis, struct observer* pobs);$/;"	m	struct:subject
+attach_observer	subject.h	/^	void (*attach_observer)(struct subject* pthis, struct observer* pobs);$/;"	m	struct:subject_vmt
+attach_observer_subject	subject.c	/^void attach_observer_subject(struct subject* pthis, struct observer* pobs)$/;"	f
+attach_observer_virtual	subject.c	/^void attach_observer_virtual(struct subject* pthis, struct observer* pobs)$/;"	f
+construct_media	media.c	/^struct media* construct_media(void)$/;"	f
+construct_reader	reader.c	/^struct reader* construct_reader(char* name)$/;"	f
+construct_subject	subject.c	/^struct subject* construct_subject(void)$/;"	f
+destruct_media	media.c	/^void destruct_media(struct media* pthis)$/;"	f
+destruct_reader	reader.c	/^void destruct_reader(struct reader* pthis)$/;"	f
+destruct_subject	subject.c	/^void destruct_subject(struct subject* pthis)$/;"	f
+detach_observer	subject.h	/^	void (*detach_observer)(struct subject* pthis, struct observer* pobs);$/;"	m	struct:subject
+detach_observer	subject.h	/^	void (*detach_observer)(struct subject* pthis, struct observer* pobs);$/;"	m	struct:subject_vmt
+detach_observer_subject	subject.c	/^void detach_observer_subject(struct subject* pthis, struct observer* pobs)$/;"	f
+detach_observer_virtual	subject.c	/^void detach_observer_virtual(struct subject* pthis, struct observer* pobs)$/;"	f
+get_news	media.c	/^static char* get_news(struct media* pthis)$/;"	f	file:
+get_news	media.h	/^	char* (*get_news)(struct media* pthis);$/;"	m	struct:media
+list_add	ulist.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	ulist.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	ulist.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	ulist.h	/^static inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	ulist.h	/^static inline int list_empty(struct list_head *head)$/;"	f
+list_entry	ulist.h	185;"	d
+list_for_each	ulist.h	193;"	d
+list_for_each_entry	ulist.h	221;"	d
+list_for_each_entry_continue	ulist.h	246;"	d
+list_for_each_entry_safe	ulist.h	233;"	d
+list_for_each_prev	ulist.h	201;"	d
+list_for_each_safe	ulist.h	211;"	d
+list_head	ulist.h	/^struct list_head {$/;"	s
+list_move	ulist.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	ulist.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_obs	subject.h	/^	struct list_head list_obs;$/;"	m	struct:subject	typeref:struct:subject::list_head
+list_splice	ulist.h	/^static inline void list_splice(struct list_head *list, struct list_head *head)$/;"	f
+list_splice_init	ulist.h	/^static inline void list_splice_init(struct list_head *list,$/;"	f
+main	test.c	/^int main()$/;"	f
+media	media.h	/^struct media {$/;"	s
+media_init	media.c	/^void media_init(struct media* pthis)$/;"	f
+name	reader.h	/^	char name[10];$/;"	m	struct:reader
+news	media.h	/^	char news[1024];$/;"	m	struct:media
+next	ulist.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+node	observer.h	/^	struct list_head node;$/;"	m	struct:observer	typeref:struct:observer::list_head
+notify_observers	subject.h	/^	void (*notify_observers)(struct subject* pthis);$/;"	m	struct:subject
+notify_observers	subject.h	/^	void (*notify_observers)(struct subject* pthis);$/;"	m	struct:subject_vmt
+notify_observers_subject	subject.c	/^void notify_observers_subject(struct subject* pthis) $/;"	f
+notify_observers_virtual	subject.c	/^void notify_observers_virtual(struct subject* pthis)$/;"	f
+observer	observer.h	/^struct observer {$/;"	s
+observer_init	observer.c	/^void observer_init(struct observer* pthis)$/;"	f
+observer_vmt	observer.h	/^struct observer_vmt {$/;"	s
+prev	ulist.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+reader	reader.h	/^struct reader {$/;"	s
+reader_init	reader.c	/^void reader_init(struct reader* pthis, char* pname)$/;"	f
+reader_update_virtual	reader.c	/^static void reader_update_virtual(struct observer* pthis, struct subject* psub)$/;"	f	file:
+set_news	media.c	/^static void set_news(struct media* pthis, char* news)$/;"	f	file:
+set_news	media.h	/^	void (*set_news)(struct media* pthis, char* news);$/;"	m	struct:media
+subject	subject.h	/^struct subject {$/;"	s
+subject_init	subject.c	/^void subject_init(struct subject* pthis)$/;"	f
+subject_vmt	subject.h	/^struct subject_vmt {$/;"	s
+super	media.h	/^	struct subject super;	$/;"	m	struct:media	typeref:struct:media::subject
+super	reader.h	/^	struct observer super;$/;"	m	struct:reader	typeref:struct:reader::observer
+update	observer.h	/^	void (*update)(struct observer* pthis, struct subject* psub);$/;"	m	struct:observer
+update	reader.h	/^	void (*update)(struct observer* pthis, struct subject* psub);$/;"	m	struct:reader
+update_observer_virtual	observer.c	/^void update_observer_virtual(struct observer* pthis, struct subject* psub)$/;"	f
+update_virtual	observer.h	/^	void (*update_virtual)(struct observer* pthis, struct subject* psub);$/;"	m	struct:observer_vmt
+vptr	observer.h	/^	const struct observer_vmt* vptr;$/;"	m	struct:observer	typeref:struct:observer::observer_vmt
+vptr	subject.h	/^	struct subject_vmt* vptr;	$/;"	m	struct:subject	typeref:struct:subject::subject_vmt
